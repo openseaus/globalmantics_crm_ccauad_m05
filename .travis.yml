@@ -4,7 +4,7 @@
 dist: "xenial"
 language: "python"
 python:
-  - "3.8"
+  - "3.7"
 
 # Need docker and docker-compose support.
 services:
