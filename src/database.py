@@ -6,6 +6,7 @@ Purpose: A simple Flask web app that demonstrates the Model View Controller
 (MVC) pattern in a meaningful and somewhat realistic way.
 """
 
+import json
 
 class Database:
     """
@@ -22,7 +23,6 @@ class Database:
 
         # Open the specified database file for reading and perform loading
         with open(path, "r") as handle:
-            import json
             self.data = json.load(handle)
 
             # ALTERNATIVE IMPLEMENTATIONS: Using YAML or XML to load data
